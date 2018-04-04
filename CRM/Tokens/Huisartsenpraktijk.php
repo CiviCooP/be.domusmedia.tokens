@@ -40,6 +40,11 @@ class CRM_Tokens_Huisartsenpraktijk {
 		$tokens['contact']['contact.huisartsenpraktijk_adres'] = CRM_Tokens_ExtensionUtil::ts('Huisartsenpraktijk adres');
 		$tokens['contact']['contact.huisartsenpraktijk_postcode'] = CRM_Tokens_ExtensionUtil::ts('Huisartsenpraktijk postcode');
 		$tokens['contact']['contact.huisartsenpraktijk_plaats'] = CRM_Tokens_ExtensionUtil::ts('Huisartsenpraktijk plaats');
+
+    $tokens['huisartsenpraktijk']['huisartsenpraktijk.naam'] = CRM_Tokens_ExtensionUtil::ts('Huisartsenpraktijk naam');
+    $tokens['huisartsenpraktijk']['huisartsenpraktijk.adres'] = CRM_Tokens_ExtensionUtil::ts('Huisartsenpraktijk adres');
+    $tokens['huisartsenpraktijk']['huisartsenpraktijk.postcode'] = CRM_Tokens_ExtensionUtil::ts('Huisartsenpraktijk postcode');
+    $tokens['huisartsenpraktijk']['huisartsenpraktijk.plaats'] = CRM_Tokens_ExtensionUtil::ts('Huisartsenpraktijk plaats');
   }
 	
 	
@@ -55,11 +60,21 @@ class CRM_Tokens_Huisartsenpraktijk {
 				$values['contact.huisartsenpraktijk_adres'] = $tokenValue['adres'];
 				$values['contact.huisartsenpraktijk_postcode'] = $tokenValue['postcode'];
 				$values['contact.huisartsenpraktijk_plaats'] = $tokenValue['plaats'];
+
+        $values['huisartsenpraktijk.naam'] = $tokenValue['naam'];
+        $values['huisartsenpraktijk.adres'] = $tokenValue['adres'];
+        $values['huisartsenpraktijk.postcode'] = $tokenValue['postcode'];
+        $values['huisartsenpraktijk.plaats'] = $tokenValue['plaats'];
       } else {				
 				$values[$cid]['contact.huisartsenpraktijk_naam'] = $tokenValue['naam'];
 				$values[$cid]['contact.huisartsenpraktijk_adres'] = $tokenValue['adres'];
 				$values[$cid]['contact.huisartsenpraktijk_postcode'] = $tokenValue['postcode'];
 				$values[$cid]['contact.huisartsenpraktijk_plaats'] = $tokenValue['plaats'];
+
+        $values[$cid]['huisartsenpraktijk.naam'] = $tokenValue['naam'];
+        $values[$cid]['huisartsenpraktijk.adres'] = $tokenValue['adres'];
+        $values[$cid]['huisartsenpraktijk.postcode'] = $tokenValue['postcode'];
+        $values[$cid]['huisartsenpraktijk.plaats'] = $tokenValue['plaats'];
       }
 		}
 	}
