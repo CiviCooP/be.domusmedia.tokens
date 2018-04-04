@@ -36,10 +36,10 @@ class CRM_Tokens_Huisartsenpraktijk {
 	}
 	
   public function tokens(&$tokens) {
-    $tokens['contact']['contact.huisartsenpraktijk_naam'] = CRM_Tokens_ExtensionUtil::ts('Huisartsenpraktijk naam');
-		$tokens['contact']['contact.huisartsenpraktijk_adres'] = CRM_Tokens_ExtensionUtil::ts('Huisartsenpraktijk adres');
-		$tokens['contact']['contact.huisartsenpraktijk_postcode'] = CRM_Tokens_ExtensionUtil::ts('Huisartsenpraktijk postcode');
-		$tokens['contact']['contact.huisartsenpraktijk_plaats'] = CRM_Tokens_ExtensionUtil::ts('Huisartsenpraktijk plaats');
+    $tokens['contact']['contact.huisartsenpraktijk_naam'] = CRM_Tokens_ExtensionUtil::ts('Geen bulk - Huisartsenpraktijk naam');
+		$tokens['contact']['contact.huisartsenpraktijk_adres'] = CRM_Tokens_ExtensionUtil::ts('Geen bulk - Huisartsenpraktijk adres');
+		$tokens['contact']['contact.huisartsenpraktijk_postcode'] = CRM_Tokens_ExtensionUtil::ts('Geen bulk - Huisartsenpraktijk postcode');
+		$tokens['contact']['contact.huisartsenpraktijk_plaats'] = CRM_Tokens_ExtensionUtil::ts('Geen bulk - Huisartsenpraktijk plaats');
 
     $tokens['huisartsenpraktijk']['huisartsenpraktijk.naam'] = CRM_Tokens_ExtensionUtil::ts('Huisartsenpraktijk naam');
     $tokens['huisartsenpraktijk']['huisartsenpraktijk.adres'] = CRM_Tokens_ExtensionUtil::ts('Huisartsenpraktijk adres');
